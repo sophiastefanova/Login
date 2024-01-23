@@ -119,6 +119,25 @@ namespace Login
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e) //Update
+        {
+            SqlConnection conn = new SqlConnection(sqlConnection);
+
+            try
+            {
+                conn.Open();
+                string query = $"Update SignIn Set FirstName = 'Lucien' Where FirstName = 'Eric'";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery(); //data is sent only one way; it is not going to return anything back to you
+
+                MessageBox.Show("Success, it works!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 
 }

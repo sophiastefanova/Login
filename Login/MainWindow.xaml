@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Login"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="450">
     <Grid>
+        <TextBox x:Name ="txtTo"
+            TextWrapping="Wrap" Text="TextBox" Margin="67,43,143,370"/>
+        <Label Content="To:" Margin="35,38,383,365"/>
+        <TextBox x:Name ="txtSubject" 
+                 TextWrapping="Wrap" Text="TextBox" Margin="67,97,143,316"/>
+        <Label Content="Subject:" Margin="10,92,383,311"/>
+        <TextBox x:Name ="txtText"
+            TextWrapping="Wrap" Text="TextBox" Margin="67,175,143,21"/>
+        <Label Content="Text:" Margin="26,167,383,243"/>
+
+        <Button Content="Send" Margin="325,390,74,21"
+         Background="DarkBlue" Foreground ="White" Click="Send" />
+        <Button Content="Clear" Margin="389,390,10,21"
+         Background="DarkBlue" Foreground ="White" Click="Clear" />
 
     </Grid>
 </Window>

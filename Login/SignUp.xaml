@@ -60,18 +60,25 @@
                 FontWeight="Bold"
                 Click="Button_Click"/>
 
-        <Button Grid.Row="6"
+        <Button Grid.Row="5"
         Width="50" Height="20"
         Content="Insert"
         Foreground="Olive"
-        FontWeight="Bold" Margin="21,16,229,5" Click="Button_Click_1"
-       />
+        FontWeight="Bold" Margin="6,36,244,25" Click="Button_Click_1" Grid.RowSpan="2"
+        />
 
         <Button Grid.Row="6"
         Width="50" Height="20"
         Content="Delete"
         Foreground="Olive"
         FontWeight="Bold" Margin="225,11,25,10" Click="Button_Click_2"
+        />
+
+        <Button Grid.Row="6"
+        Width="50" Height="20"
+        Content="Update"
+        Foreground="Olive"
+        FontWeight="Bold" Margin="46,16,204,5" RenderTransformOrigin="-0.056,-0.266" Click="Button_Click_3"
         />
 
     </Grid>
